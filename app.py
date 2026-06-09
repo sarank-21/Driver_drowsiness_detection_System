@@ -299,22 +299,18 @@ def get_fatigue_score(
     mouth_state,
     mouth_conf
 ):
-
     score = 0
 
-    eye_state = eye_state.lower()
-    mouth_state = mouth_state.lower()
+    eye_state = eye_state.strip().lower()
+    mouth_state = mouth_state.strip().lower()
 
-    if "closed" in eye_state:
+    if eye_state == "closed":
         score += eye_conf * 0.8
 
-    if "yawn" in mouth_state:
+    if mouth_state == "yawn":
         score += mouth_conf * 0.4
 
-    return min(
-        round(score),
-        100
-    )
+    return min(round(score), 100)
 
 # =====================================================
 # FATIGUE LEVEL
