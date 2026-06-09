@@ -1,0 +1,11 @@
+# Ignore datasets
+Eye_Dataset/
+Mouth_Dataset/
+Mouth_Crop_Dataset/
+
+# Ignore model files
+*.pth
+
+# Ignore Python cache
+__pycache__/
+*.pyc
