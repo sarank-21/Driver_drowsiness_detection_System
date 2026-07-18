@@ -11,8 +11,8 @@ from mediapipe.python.solutions import face_mesh
 # CONFIG
 # =====================================================
 
-EYE_MODEL_PATH = "D:\PROJECTS\project_no_5\Driver_Drowsiness_Detection\cnn_eye_model.pth"
-MOUTH_MODEL_PATH = "D:\PROJECTS\project_no_5\Driver_Drowsiness_Detection\cnn_mouth_model.pth"
+EYE_MODEL_PATH = "D:\PROJECTS\Capstone_Project_5\Driver_drowsiness_detection_System\cnn_eye_model.pth"
+MOUTH_MODEL_PATH = "D:\PROJECTS\Capstone_Project_5\Driver_drowsiness_detection_System\cnn_mouth_model.pth"
 
 DEVICE = torch.device(
     "cuda" if torch.cuda.is_available() else "cpu"
